@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Button Test Page</title>
+  <script src="bundle.js"></script>
+</head>
+
+<body>
+  <h1> SharePoint FrameWork - Lite Server TestPage  </h1>
+  <app-hello-spfx-web-part displayText="First Value"></app-hello-spfx-web-part>
+
+  <script>
+    var button = document.querySelector('app-hello-spfx-web-part');
+    button.addEventListener('clicked', function (event) {
+      alert(event.detail);
+    });
+  </script>
+</body>
+
+</html>
+
